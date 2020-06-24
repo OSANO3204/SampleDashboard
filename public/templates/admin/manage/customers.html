@@ -1,0 +1,78 @@
+<div id="dashboard"></div>
+<main class="w-full h-screen bgColor-3-100 fx fx-j-e ff-pri">
+  <div id="header"></div>
+
+  <div class="w-10/12 h-auto  bgColor-   ml-20 mr-5 mt-16 ff-pri">
+    <h3 class="pb-5 px-5 color-3-700">
+      <i class="fal fa-users"></i>
+      Manage Customers.</h3>
+    <table class="table-auto border-collapse bgColor-trans">
+
+      <thead>
+        <tr class=" bgColor-sec ">
+          <th class="px-4 py-2 color-2-700">  </th>
+          <th class="px-4 py-2 color-2-700">Full Name</th>
+          <th class="px-4 py-2 color-2-700">Email</th>
+          <th class="px-4 py-2 color-2-700">Phone</th>
+          <th class="px-4 py-2 color-2-700">Register Date</th>
+          <th class="px-4 py-2 color-2-700">Status<th/>
+          <th class="px-4 py-2 color-2-700"><th/>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="pointer bgColor-sec border-8 b-solid b-color-3-100">
+          <td class="px-4 py-1 color-2-600 border-0  ">
+            <div class="rounded-full bgColor-pri h-8 w-8">
+              <img class="w-full h-full rounded-full cover" src="./assets/images/pic.jpg" alt="">
+            </div>
+          </td>
+          <td class="px-4 py-1 color-2-600 border-0">Tracey George</td>
+          <td class="px-4 py-1 color-2-600 border-0">traceygeorge@gmail.com</td>
+          <td class="px-4 py-1 color-2-600 border-0">0720311002</td>
+         <td class="px-4 py-1color-2-600 border-0  ">May 12 2020</td>
+
+         <td class="px-4 py-1 color-pri">Active</td>
+         <td class="px-4 py-1 color-pri">
+           <button class="w-auto bgColor-3-600 color-danger fs-sm  py-1 px-5 border-0 rounded
+           fw-bold ff-pri pointer outline-0" type="submit" name="join">Block</button>
+         </td>
+         <td class="px-4 py-1 color-pri">
+           <button class="w-auto bgColor-2-600 color-danger fs-sm  py-1 px-3 border-0 rounded
+           fw-bold ff-pri pointer outline-0" type="submit" name="join">Remove</button>
+         </td>
+        </tr>
+        <tr class="pointer bgColor-sec border-8 b-solid b-color-3-100">
+          <td class="px-4 py-1 color-2-600 border-0  ">
+            <div class="rounded-full bgColor-pri h-8 w-8">
+              <img class="w-full h-full rounded-full cover" src="./assets/images/a4.jpg" alt="">
+            </div>
+          </td>
+          <td class="px-4 py-1 color-2-600 border-0">Tracey George</td>
+          <td class="px-4 py-1 color-2-600 border-0">traceygeorge@gmail.com</td>
+          <td class="px-4 py-1 color-2-600 border-0">0720311002</td>
+         <td class="px-4 py-1color-2-600 border-0  ">May 12 2020</td>
+
+         <td class="px-4 py-1 color-danger">blocked</td>
+         <td class="px-4 py-1 color-pri">
+           <button class="w-auto bgColor-pri color-sec fs-sm  py-1 px-3 border-0 rounded
+           fw-bold ff-pri pointer outline-0" type="submit" name="join">Activate</button>
+         </td>
+         <td class="px-4 py-1 color-pri">
+           <button class="w-auto bgColor-2-600 color-danger fs-sm  py-1 px-3 border-0 rounded
+           fw-bold ff-pri pointer outline-0" type="submit" name="join">Remove</button>
+         </td>
+        </tr>
+
+      </tbody>
+    </table>
+</div>
+</main>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+  $('#dashboard').load('templates/admin/manage/dashboard.html');
+  $('#header').load('templates/admin/manage/header.html');
+});
+</script>
